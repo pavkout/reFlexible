@@ -5,5 +5,5 @@ React flexbox layout
 ## Getting Started
 
 ```
-npm install reflexbox
+npm install reflex
 ```
