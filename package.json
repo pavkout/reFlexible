@@ -1,0 +1,26 @@
+{
+  "name": "reflex",
+  "version": "1.0.0",
+  "description": "React Flexbox layout system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pavkout/reFlex.git"
+  },
+  "keywords": [
+    "Flexbox",
+    "layout",
+    "system",
+    "flex",
+    "css"
+  ],
+  "author": "Koutoglou Pavlos",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pavkout/reFlex/issues"
+  },
+  "homepage": "https://github.com/pavkout/reFlex#readme"
+}
