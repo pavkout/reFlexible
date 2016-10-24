@@ -18,7 +18,12 @@ module.exports = {
   },
   debug: true,
   resolve: {
-   extensions: ['', '.js', '.jsx']
+     extensions: ['', '.js', '.jsx'],
+     root: path.resolve(__dirname),
+     alias: {
+      app: './src/app',
+      reFlex: './components/reFlex/reFlex'
+    }
   },
   devServer: {
     inline: true,
