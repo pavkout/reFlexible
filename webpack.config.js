@@ -9,7 +9,7 @@ if (process.env.NODE_ENV === 'development') {
   var loaders = ['babel-loader']
 }
 module.exports = {
-  devtool: 'eval',
+  devtool: 'source-map',
   entry: './index.js',
   output: {
     path: __dirname + '/dist',

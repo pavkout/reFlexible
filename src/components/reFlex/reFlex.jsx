@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 class ReFlex extends Component {
 
-  getStyles(props) {
+  getStyles() {
 
     const {
       justifyContent,
@@ -15,7 +15,7 @@ class ReFlex extends Component {
       flexBasis,
       flex,
     } = this.props;
-
+    
     return {
       flex: {
         display: 'flex',
@@ -64,6 +64,8 @@ ReFlex.propTypes = {
 };
 
 ReFlex.defaultProps = {
+  flexDirection: 'row',
+  flexWrap: 'nowrap'
 };
 
 export default ReFlex;
