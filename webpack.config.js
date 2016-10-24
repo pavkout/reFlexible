@@ -1,5 +1,6 @@
 var path = require('path');
 var webpack = require('webpack');
+var autoprefixer = require('autoprefixer');
 
 // webpack.config.js
 if (process.env.NODE_ENV === 'development') {
@@ -15,6 +16,10 @@ module.exports = {
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
+  debug: true,
+  resolve: {
+   extensions: ['', '.js', '.jsx']
+  },
   devServer: {
     inline: true,
     port: 8080
@@ -27,6 +32,14 @@ module.exports = {
       query: {
         presets: ['es2015', 'react']
       }
-    }]
+    },
+    {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader!postcss-loader'
+    }
+  ]
+  },
+  postcss: function () {
+    return [autoprefixer];
   }
 };
