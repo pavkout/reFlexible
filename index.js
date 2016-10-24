@@ -1,16 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { ReFlex } from './src/components'
+import App from 'app';
 
-ReactDOM.render(
-  <ReFlex
-    justifyContent="center"
-    alignItems="center"
-    flexDirection="column"
-  >
-    <input/>
-    <input/>
-    <input/>
-    <input/>
-  </ReFlex>,
- document.getElementById('app'));
+ReactDOM.render(<App />, document.getElementById('app'));
