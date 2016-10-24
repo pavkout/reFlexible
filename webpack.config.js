@@ -10,13 +10,13 @@ if (process.env.NODE_ENV === 'development') {
 }
 module.exports = {
   devtool: 'source-map',
+  debug: true,
   entry: './index.js',
   output: {
     path: __dirname + '/dist',
     filename: 'bundle.js',
     publicPath: '/dist/'
   },
-  debug: true,
   resolve: {
      extensions: ['', '.js', '.jsx'],
      root: path.resolve(__dirname),
@@ -27,7 +27,8 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    port: 8080
+    port: 8080,
+    hot: true
   },
   module: {
     loaders: [{
