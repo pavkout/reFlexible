@@ -5,5 +5,5 @@ React flexbox layout
 ## Getting Started
 
 ```
-npm install reflexible
+npm install reFlexible
 ```
