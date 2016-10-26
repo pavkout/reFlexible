@@ -17,18 +17,16 @@ class ReFlex extends Component {
     } = this.props;
 
     return {
-      flex: {
         display: 'flex',
-        justifyContent: justifyContent ? justifyContent : null,
-        alignItems: alignItems ? alignItems : null,
-        flexDirection: flexDirection ? flexDirection : null,
-        flexWrap: flexWrap ? flexWrap : null,
-        flexGrow: flexGrow ? flexGrow : null,
-        flexFlow: flexFlow ? flexFlow : null,
-        flexShrink: flexShrink ? flexShrink : null,
-        flexBasis: flexBasis ? flexBasis : null,
-        flex: flex ? flex : null,
-      }
+        justifyContent: justifyContent ? justifyContent : 'none',
+        alignItems: alignItems ? alignItems : 'none',
+        flexDirection: flexDirection ? flexDirection : 'none',
+        flexWrap: flexWrap ? flexWrap : 'none',
+        flexGrow: flexGrow ? flexGrow : 'none',
+        flexFlow: flexFlow ? flexFlow : 'none',
+        flexShrink: flexShrink ? flexShrink : 'none',
+        flexBasis: flexBasis ? flexBasis : 'none',
+        flex: flex ? flex : 'none',
     };
   }
 
@@ -39,10 +37,11 @@ class ReFlex extends Component {
   render() {
     const { className } = this.props;
     const styles = this.getStyles();
+
     return (
       <div
         className={className ? className : ''}
-        style={styles.flex}
+        style={styles}
       >
         {this.props.children}
       </div>

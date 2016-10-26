@@ -7,7 +7,7 @@ class App extends Component {
 		return (
       <ReFlex
         justifyContent="center"
-        alignItems="flex-start"
+        alignItems="center"
         flexDirection="column"
 
       >
