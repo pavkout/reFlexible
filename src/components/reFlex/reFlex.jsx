@@ -15,7 +15,7 @@ class ReFlex extends Component {
       flexBasis,
       flex,
     } = this.props;
-    
+
     return {
       flex: {
         display: 'flex',

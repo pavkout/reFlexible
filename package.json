@@ -4,8 +4,10 @@
   "description": "React Flexbox layout system",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "webpack-dev-server"
+    "build": "webpack-dev-server --config config/webpack/webpack.config",
+    "deploy": "webpack -p --config config/webpack/webpack.config",
+    "watch": "webpack --config config/webpack/webpack.config --progress --colors --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -26,11 +28,12 @@
   },
   "homepage": "https://github.com/pavkout/reFlex#readme",
   "dependencies": {
+    "auto-prefixer": "^0.4.2",
+    "lodash": "^4.16.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
   "devDependencies": {
-    "autoprefixer": "^6.5.1",
     "babel-core": "^6.17.0",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.16.0",
