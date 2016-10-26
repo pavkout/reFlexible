@@ -4,6 +4,7 @@
   "description": "React Flexbox layout system",
   "main": "index.js",
   "scripts": {
+    "build": "webpack-dev-server --config config/webpack/webpack.config",
     "deploy": "webpack -p --config config/webpack/webpack.config",
     "watch": "webpack --config config/webpack/webpack.config --progress --colors --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
