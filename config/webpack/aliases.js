@@ -1,7 +1,7 @@
 module.exports = {
 
   //Components
-  reFlex: 'src/components/reFlex/reFlex',
+  flexBox: 'src/components/flexBox/flexBox',
 
   //Main app
   app: 'src/app',

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import Constants from 'constants';
 
-class ReFlex extends Component {
+class FlexBox extends Component {
 
   getStyles() {
 
@@ -50,7 +50,7 @@ class ReFlex extends Component {
   }
 }
 
-ReFlex.propTypes = {
+FlexBox.propTypes = {
   justifyContent: React.PropTypes.oneOf(Object.keys(Constants.justifyContent).map(key => { return key; })),
   alignItems: React.PropTypes.oneOf(Object.keys(Constants.alignItems).map(key => { return key; })),
   flexDirection: React.PropTypes.oneOf(Object.keys(Constants.flexDirection).map(key => { return key; })),
@@ -63,9 +63,9 @@ ReFlex.propTypes = {
   children: React.PropTypes.any
 };
 
-ReFlex.defaultProps = {
+FlexBox.defaultProps = {
   flexDirection: 'row',
   flexWrap: 'nowrap'
 };
 
-export default ReFlex;
+export default FlexBox;

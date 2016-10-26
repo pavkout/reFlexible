@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import Constants from 'constants';
 
-import ReFlex from 'reFlex';
+import FlexBox from 'flexBox';
 
 class App extends Component {
 	render() {
 		return (
-      <ReFlex
+      <FlexBox
         justifyContent={Constants.justifyContent.center}
         alignItems={Constants.alignItems.center}
         flexDirection={Constants.flexDirection.column}
@@ -15,7 +15,7 @@ class App extends Component {
         <input/>
         <input/>
         <input/>
-      </ReFlex>
+      </FlexBox>
 		);
 	}
 }
