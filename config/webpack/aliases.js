@@ -3,8 +3,8 @@ module.exports = {
   //Components
   flexBox: 'src/components/flexBox/flexBox',
 
-  //Main app
-  app: 'src/app',
+  //Example
+  app: 'example/components/app',
 
   //Aliases
   constants: 'src/constants'
