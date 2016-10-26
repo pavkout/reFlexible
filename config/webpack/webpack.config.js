@@ -34,8 +34,7 @@ module.exports = {
   },
   devServer: {
     inline: true,
-    port: 8080,
-    hot: true
+    port: 8080
   },
   module: {
     loaders: [{
