@@ -4,5 +4,8 @@ module.exports = {
   reFlex: 'src/components/reFlex/reFlex',
 
   //Main app
-  app: 'src/app'
+  app: 'src/app',
+
+  //Aliases
+  constants: 'src/constants'
 };

@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import Constants from 'constants';
 
 class ReFlex extends Component {
 
@@ -50,10 +51,10 @@ class ReFlex extends Component {
 }
 
 ReFlex.propTypes = {
-  justifyContent: React.PropTypes.oneOf(['center', 'flex-start', 'flex-end', 'space-around', 'space-between']),
-  alignItems: React.PropTypes.oneOf(['center', 'flex-start', 'flex-end', 'baseline', 'stretch']),
-  flexDirection: React.PropTypes.oneOf(['column', 'column-reverse', 'row', 'row-reverse']),
-  flexWrap: React.PropTypes.oneOf(['wrap', 'nowrap', 'wrap-reverse']),
+  justifyContent: React.PropTypes.oneOf(Object.keys(Constants.justifyContent).map(key => { return key; })),
+  alignItems: React.PropTypes.oneOf(Object.keys(Constants.alignItems).map(key => { return key; })),
+  flexDirection: React.PropTypes.oneOf(Object.keys(Constants.flexDirection).map(key => { return key; })),
+  flexWrap: React.PropTypes.oneOf(Object.keys(Constants.flexWrap).map(key => { return key; })),
   flexGrow: React.PropTypes.string,
   flexFlow: React.PropTypes.string,
   flexShrink: React.PropTypes.string,
