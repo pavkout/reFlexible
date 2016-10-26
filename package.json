@@ -28,7 +28,6 @@
   },
   "homepage": "https://github.com/pavkout/reFlex#readme",
   "dependencies": {
-    "auto-prefixer": "^0.4.2",
     "lodash": "^4.16.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
