@@ -1,9 +1,9 @@
-# ReFlex
+# ReFlexible
 
 React flexbox layout
 
 ## Getting Started
 
 ```
-npm install reflex
+npm install reflexible
 ```
