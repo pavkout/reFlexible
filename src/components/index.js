@@ -1,1 +1,1 @@
-export { default as ReFlex } from './reFlex/reFlex';
+export { default as FlexBox } from './flexBox/flexBox';
