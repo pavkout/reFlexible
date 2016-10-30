@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavkout/reFlex.git"
+    "url": "git+https://github.com/pavkout/reFlexible.git"
   },
   "keywords": [
     "Flexbox",
@@ -24,9 +24,9 @@
   "author": "Koutoglou Pavlos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavkout/reFlex/issues"
+    "url": "https://github.com/pavkout/reFlexible/issues"
   },
-  "homepage": "https://github.com/pavkout/reFlex#readme",
+  "homepage": "https://github.com/pavkout/reFlexible",
   "dependencies": {
     "lodash": "^4.16.4",
     "react": "^15.3.2",
