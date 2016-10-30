@@ -1,26 +1,48 @@
 {
-  "name": "reflex",
+  "name": "reFlexible",
   "version": "1.0.0",
   "description": "React Flexbox layout system",
   "main": "index.js",
   "scripts": {
+    "build": "webpack-dev-server --config config/webpack/webpack.config",
+    "deploy": "webpack -p --config config/webpack/webpack.config",
+    "watch": "webpack --config config/webpack/webpack.config --progress --colors --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/pavkout/reFlex.git"
+    "url": "git+https://github.com/pavkout/reFlexible.git"
   },
   "keywords": [
     "Flexbox",
     "layout",
     "system",
     "flex",
+    "react",
     "css"
   ],
   "author": "Koutoglou Pavlos",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/pavkout/reFlex/issues"
+    "url": "https://github.com/pavkout/reFlexible/issues"
   },
-  "homepage": "https://github.com/pavkout/reFlex#readme"
+  "homepage": "https://github.com/pavkout/reFlexible",
+  "dependencies": {
+    "lodash": "^4.16.4",
+    "react": "^15.3.2",
+    "react-dom": "^15.3.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-react": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "css-loader": "^0.25.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^1.0.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.16.2"
+  }
 }
