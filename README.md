@@ -10,4 +10,4 @@ npm install reFlexible
 
 ## Issues
 
-Please [Open issue](../../issues/), describe bug, suggest solution
+Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug, suggest solution
