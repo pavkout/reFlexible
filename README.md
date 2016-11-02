@@ -7,3 +7,7 @@ React flexbox layout
 ```
 npm install reFlexible
 ```
+
+## Issues
+
+Please [Open issue](../../issues/), describe bug, suggest solution
