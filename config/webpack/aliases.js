@@ -6,6 +6,9 @@ module.exports = {
   //Example
   app: 'example/components/app',
 
-  //Aliases
-  constants: 'src/constants'
+  //Constants
+  constants: 'src/constants',
+
+  //Helpers
+  browserSupportUtils: 'src/helpers/browserSupportUtils'
 };
