@@ -35,7 +35,7 @@ class FlexBox extends Component {
   constructor(props) {
     super(props);
     if (!supportFlexbox()) {
-      console.log('Flex display are not supported');
+      console.error('Flex display are not supported');
     }
   }
 
