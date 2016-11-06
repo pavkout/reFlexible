@@ -100,6 +100,8 @@ module.exports = {
           return 'data-' + kebabCase(key);
         }
       });
+    } else {
+      return null;
     }
   }
 };
