@@ -94,14 +94,12 @@ module.exports = {
   },
 
   createDataAttributesFromProps: function(props) {
-    if (props && props !== undefined) {
-      return mapKeys(props, (value, key) => {
-        if (key in Constants) {
-          return 'data-' + kebabCase(key);
-        }
-      });
-    } else {
-      return null;
-    }
+    if (!props && props === undefined) { return null; }
+
+    return mapKeys(props, (value, key) => {
+      if (key in Constants) {
+        return 'data-' + kebabCase(key);
+      }
+    });
   }
 };
