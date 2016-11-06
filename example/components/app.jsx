@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import ReactElement  from 'react/lib/ReactElement';
 import FlexBox from 'flexBox';
 
 import './app.post.css';
@@ -19,7 +18,7 @@ class App extends Component {
 		};
 
 		return (
-			<div reflexible>
+			<div reflexible center centerJustified style={{height: '800px', width: '100%'}}>
 				<div style={style} self-end flex="4">1</div>
 				<div style={style} order="1" flex-grow="1">2</div>
 				<div style={style} order="2" flex-grow="2">3</div>
