@@ -15,7 +15,6 @@ Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug,
 ### Some examples
 ```js
 import React, { Component } from 'react';
-import ReactElement  from 'react/lib/ReactElement';
 import FlexBox from 'flexBox';
 
 import './app.post.css';
