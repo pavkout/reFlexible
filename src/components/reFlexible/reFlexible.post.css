@@ -23,6 +23,7 @@
 
 .flex-none { flex: none; }
 
+.flex-column  { flex-direction: column !important; }
 .flex-row     { flex-direction: row; }
 .flex-wrap    { flex-wrap: wrap; }
 
