@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Constants from 'constants';
+import supportFlexbox from 'browserSupportUtils';
 
 class FlexBox extends Component {
 
@@ -33,6 +34,9 @@ class FlexBox extends Component {
 
   constructor(props) {
     super(props);
+    if (!supportFlexbox()) {
+      console.log('Flex display are not supported');
+    }
   }
 
   render() {
