@@ -1,29 +1,37 @@
 const Constants = {
-  justifyContent: {
-    center: 'center',
-    flexStart: 'flex-start',
-    flexEnd: 'flex-end',
-    spaceAround: 'space-around',
-    spaceBetween: 'space-between'
-  },
-  alignItems: {
-    center: 'center',
-    flexStart: 'flex-start',
-    flexEnd: 'flex-end',
-    baseline: 'baseline',
-    stretch: 'stretch'
-  },
-  flexDirection: {
-    column: 'column',
-    columnReverse: 'column-reverse',
-    row: 'row',
-    rowReverse: 'row-reverse'
-  },
-  flexWrap: {
-    wrap: 'wrap',
-    nowrap: 'nowrap',
-    wrapReverse: 'wrap-reverse'
-  }
+  reflexible: 'reflexible',
+  column: 'column',
+  reverse: 'reverse',
+  center: 'center',
+  start: 'start',
+  end: 'end',
+  stretch: 'stretch',
+  startJustified: 'startJustified',
+  'start-justified': 'start-justified',
+  centerJustified: 'centerJustified',
+  'center-justified': 'center-justified',
+  endJustified: 'endJustified',
+  'end-justified': 'end-justified',
+  justified: 'justified',
+  aroundJustified: 'aroundJustified',
+  'around-justified': 'around-justified',
+  wrap: 'wrap',
+  selfStart: 'selfStart',
+  'self-start': 'self-start',
+  selfCenter: 'selfCenter',
+  'self-center': 'self-center',
+  selfEnd: 'selfEnd',
+  'self-end': 'self-end',
+  selfStretch: 'selfStretch',
+  'self-stretch': 'self-stretch',
+  order: 'order',
+  flexGrow: 'flexGrow',
+  'flex-grow': 'flex-grow',
+  flexShrink: 'flexShrink',
+  'flex-shrink': 'flex-shrink',
+  flexBasis: 'flexBasis',
+  'flex-basis': 'flex-basis',
+  flex: 'flex'
 };
 
 export default Constants;
