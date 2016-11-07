@@ -14,7 +14,10 @@ React.createElement = function(type, props) {
   const args = arguments;
 
   if (props && typeof type === 'string') {
-      Object.assign(props, initProps(cloneProps));
+      props = {
+        ...props,
+        ...initProps(cloneProps)
+      }
   }
   return originalCreateElement.apply(this, [type, props].concat(Array.prototype.slice.call(args, 2)));
 };

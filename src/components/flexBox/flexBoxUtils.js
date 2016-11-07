@@ -87,7 +87,10 @@ module.exports = {
           }
 
           return {
-              style: Object.assign(props.style || {},style)
+              style: {
+                ...props.style || {},
+                ...style
+              }
           };
       }
       return {};
