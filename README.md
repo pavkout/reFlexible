@@ -71,7 +71,4 @@ export default App;
 ```
 ### Output
 
-```
 ![snapshot.png](https://s13.postimg.org/p4qqhbexj/snapshot.png)
-
-```
