@@ -96,13 +96,11 @@ module.exports = {
       return {};
   },
 
-  createDataAttributesFromProps: function(props) {
+  deleteFlexBoxProps: function(props) {
     if (!props && props === undefined) { return null; }
 
     return mapKeys(props, (value, key) => {
-      if (key in Constants) {
-        delete props.key
-      }
+      if (key in Constants) { delete props.key; }
     });
   }
 };
