@@ -1,4 +1,4 @@
-import { mapKeys, kebabCase } from 'lodash';
+import { mapKeys } from 'lodash';
 import Constants from 'constants';
 
 module.exports = {
@@ -101,7 +101,7 @@ module.exports = {
 
     return mapKeys(props, (value, key) => {
       if (key in Constants) {
-        return 'data-' + kebabCase(key);
+        delete props.key
       }
     });
   }
