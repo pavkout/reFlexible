@@ -14,4 +14,5 @@ module.exports = {
 
   //FlexBoxUtils
   flexBoxUtils: 'src/components/flexBox/flexBoxUtils',
+  flexUtils: 'src/components/flexBox/flexUtils',
 };
