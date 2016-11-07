@@ -1,5 +1,20 @@
 import React  from 'react';
 import { initProps, deleteFlexBoxProps } from 'flexBoxUtils';
+import supportFlexbox from 'browserSupportUtils';
+
+// Check if flexbox are supported in browser else print an error in console
+const supportsCSS = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false);
+let supportsFlex = false;
+
+if (supportsCSS) {
+  supportsFlex = CSS.supports("display", "flex");
+} else if (!supportFlexbox()) {
+  supportsFlex = false;
+}
+
+if (!supportsFlex) {
+  console.error('Flex display are not supported');
+}
 
 const originalCreateElement = React.createElement;
 
