@@ -72,6 +72,6 @@ export default App;
 ### Output
 
 ```
-![alt tag](https://raw.githubusercontent.com/pavkout/reFlexible/feature/refactor/snapshots/snapshot.png)
+![alt tag](https://github.com/pavkout/reFlexible/reFlexible/feature/refactor/snapshots/snapshot.png)
 
 ```
