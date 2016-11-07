@@ -1,5 +1,4 @@
 import React  from 'react';
-import ReactElement  from 'react/lib/ReactElement';
 import { initProps, createDataAttributesFromProps } from 'flexBoxUtils';
 
 const originalCreateElement = React.createElement;
