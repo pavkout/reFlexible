@@ -10,5 +10,9 @@ module.exports = {
   constants: 'src/constants',
 
   //Helpers
-  browserSupportUtils: 'src/helpers/browserSupportUtils'
+  browserSupportUtils: 'src/helpers/browserSupportUtils',
+
+  //FlexBoxUtils
+  flexBoxUtils: 'src/components/flexBox/flexBoxUtils',
+  flexUtils: 'src/components/flexBox/flexUtils',
 };

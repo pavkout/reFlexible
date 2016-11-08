@@ -1,75 +1,43 @@
-import React, {Component} from 'react';
-import Constants from 'constants';
+import React  from 'react';
+import { initProps, deleteFlexBoxProps } from 'flexBoxUtils';
 import supportFlexbox from 'browserSupportUtils';
 
-class FlexBox extends Component {
+// Check if flexbox are supported in browser else print an error in console
+const supportsCSS = !!((window.CSS && window.CSS.supports) || window.supportsCSS || false);
+let supportsFlex = false;
 
-  getStyles() {
-
-    const {
-      justifyContent,
-      alignItems,
-      flexDirection,
-      flexWrap,
-      flexGrow,
-      flexFlow,
-      flexShrink,
-      flexBasis,
-      flex,
-    } = this.props;
-
-    return {
-        display: 'flex',
-        justifyContent: justifyContent ? justifyContent : 'none',
-        alignItems: alignItems ? alignItems : 'none',
-        flexDirection: flexDirection ? flexDirection : 'none',
-        flexWrap: flexWrap ? flexWrap : 'none',
-        flexGrow: flexGrow ? flexGrow : 'none',
-        flexFlow: flexFlow ? flexFlow : 'none',
-        flexShrink: flexShrink ? flexShrink : 'none',
-        flexBasis: flexBasis ? flexBasis : 'none',
-        flex: flex ? flex : 'none',
-    };
-  }
-
-  constructor(props) {
-    super(props);
-    if (!supportFlexbox()) {
-      console.log('Flex display are not supported');
-    }
-  }
-
-  render() {
-    const { className } = this.props;
-    const styles = this.getStyles();
-
-    return (
-      <div
-        className={className ? className : ''}
-        style={styles}
-      >
-        {this.props.children}
-      </div>
-    );
-  }
+if (supportsCSS) {
+  supportsFlex = CSS.supports("display", "flex");
+} else if (!supportFlexbox()) {
+  supportsFlex = false;
 }
 
-FlexBox.propTypes = {
-  justifyContent: React.PropTypes.oneOf(Object.keys(Constants.justifyContent).map(key => { return key; })),
-  alignItems: React.PropTypes.oneOf(Object.keys(Constants.alignItems).map(key => { return key; })),
-  flexDirection: React.PropTypes.oneOf(Object.keys(Constants.flexDirection).map(key => { return key; })),
-  flexWrap: React.PropTypes.oneOf(Object.keys(Constants.flexWrap).map(key => { return key; })),
-  flexGrow: React.PropTypes.string,
-  flexFlow: React.PropTypes.string,
-  flexShrink: React.PropTypes.string,
-  flexBasis: React.PropTypes.string,
-  flex: React.PropTypes.string,
-  children: React.PropTypes.any
+if (!supportsFlex) {
+  console.error('Flex display are not supported');
+}
+
+const originalCreateElement = React.createElement;
+
+React.createElement = function(type, props) {
+  // Clone the props
+  const cloneProps = props;
+
+  //Use this function to convert props into html data attributes
+  props = deleteFlexBoxProps(props);
+
+  //Delete undefined props if exist
+  delete props.undefined;
+
+  const args = arguments;
+
+  if (props && typeof type === 'string') {
+      props = {
+        ...props,
+        ...initProps(cloneProps)
+      }
+  }
+
+  return originalCreateElement.apply(this, [type, props].concat(Array.prototype.slice.call(args, 2)));
 };
 
-FlexBox.defaultProps = {
-  flexDirection: 'row',
-  flexWrap: 'nowrap'
-};
-
-export default FlexBox;
+module.exports = {};
