@@ -18,26 +18,24 @@ import {
 module.exports = {
   initProps: function(props) {
       if (props) {
-          // Init a style object
-          const style = {};
           // Clone the props
           const cloneProps = cloneDeep(props);
 
           return {
               style: {
                 ...props.style || {},
-                ...initFlexible(style, cloneProps),
-                ...initFlexDirection(style, cloneProps),
-                ...initWrap(style, cloneProps),
-                ...initJustifyContent(style, cloneProps),
-                ...initAlignItems(style, cloneProps),
-                ...initAlignContent(style, cloneProps),
-                ...initAlignSelf(style, cloneProps),
-                ...initOrder(style, cloneProps),
-                ...initFlexGrow(style, cloneProps),
-                ...initFlexShrink(style, cloneProps),
-                ...initFlexBasis(style, cloneProps),
-                ...initFlex(style, cloneProps)
+                ...initFlexible(cloneProps),
+                ...initFlexDirection(cloneProps),
+                ...initWrap(cloneProps),
+                ...initJustifyContent(cloneProps),
+                ...initAlignItems(cloneProps),
+                ...initAlignContent(cloneProps),
+                ...initAlignSelf(cloneProps),
+                ...initOrder(cloneProps),
+                ...initFlexGrow(cloneProps),
+                ...initFlexShrink(cloneProps),
+                ...initFlexBasis(cloneProps),
+                ...initFlex(cloneProps)
               }
           };
       }

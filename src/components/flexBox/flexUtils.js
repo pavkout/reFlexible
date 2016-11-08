@@ -1,19 +1,19 @@
 module.exports = {
   // Container Attribute: display
-  initFlexible: function(style, props) {
+  initFlexible: function(props) {
+    let style = {};
     if (props.flexible) {
       style = { display: "flex" }
     } else if (props["inline"] || props["inline-flexible"] || props["inlineFlexible"]) {
       style = { display: "inline-flex" }
-    } else {
-      style = {}
     }
 
     return style;
   },
 
   // Container Attribute: flex-direction
-  initFlexDirection: function(style, props) {
+  initFlexDirection: function(props) {
+    let style = {};
     if (props.column) {
         style.flexDirection = style.WebkitFlexDirection = props.reverse ? "column-reverse" : "column";
     } else {
@@ -24,7 +24,8 @@ module.exports = {
   },
 
   // Container Attribute: flex-Wrap
-  initWrap: function(style, props) {
+  initWrap: function(props) {
+    let style = {};
     if (props.wrap) {
         style.flexWrap = "wrap";
     } else if (props["wrap-reverse"] || props["wrapReverse"]){
@@ -37,7 +38,8 @@ module.exports = {
   },
 
   // Container Attribute: justify-content
-  initJustifyContent: function(style, props) {
+  initJustifyContent: function(props) {
+    let style = {};
     if (props["startJustified"] || props["start-justified"]) {
       style.justifyContent = "flex-start";
     } else if (props["centerJustified"] || props["center-justified"]) {
@@ -53,7 +55,8 @@ module.exports = {
   },
 
   // Container Attribute: align-items
-  initAlignItems: function(style, props) {
+  initAlignItems: function(props) {
+    let style = {};
     if (props["alignCenter"] || props["align-center"]) {
         style.alignItems = "center";
     } else if (props["alignStart"] || props["align-start"]) {
@@ -69,7 +72,8 @@ module.exports = {
   },
 
   // Container Attribute: align-content
-  initAlignContent: function(style, props) {
+  initAlignContent: function(props) {
+    let style = {};
     if (props["contentCenter"] || props["content-center"]) {
         style.alignContent = "center";
     } else if (props["contentStart"] || props["content-start"]) {
@@ -87,7 +91,8 @@ module.exports = {
   },
 
   // Item Attribute: align-self
-  initAlignSelf: function(style, props) {
+  initAlignSelf: function(props) {
+    let style = {};
     if (props["selfStart"] || props["self-start"]) {
         style.alignSelf = "flex-start";
     } else if (props["selfCenter"] || props["self-center"]) {
@@ -106,7 +111,8 @@ module.exports = {
   },
 
   // Item Attribute: order
-  initOrder: function(style, props) {
+  initOrder: function(props) {
+    let style = {};
     if (props.order) {
         style.order = props.order;
     }
@@ -114,7 +120,8 @@ module.exports = {
   },
 
   // Item Attribute: flex-grow
-  initFlexGrow: function(style, props) {
+  initFlexGrow: function(props) {
+    let style = {};
     if (props["flexGrow"] || props["flex-grow"]) {
         style.flexGrow = props["flexGrow"] || props["flex-grow"];
     }
@@ -122,7 +129,8 @@ module.exports = {
   },
 
   // Item Attribute: flex-shrink
-  initFlexShrink: function(style, props) {
+  initFlexShrink: function(props) {
+    let style = {};
     if (props["flexShrink"] || props["flex-shrink"]) {
         style.flexShrink = props["flexShrink"] || props["flex-shrink"];
     }
@@ -130,7 +138,8 @@ module.exports = {
   },
 
   // Item Attribute: flex-basis
-  initFlexBasis: function(style, props) {
+  initFlexBasis: function(props) {
+    let style = {};
     if (props["flexBasis"] || props["flex-basis"]) {
         style.flexBasis = props["flexBasis"] || props["flex-basis"];
     }
@@ -138,7 +147,8 @@ module.exports = {
   },
 
   // Item Attribute: flex
-  initFlex: function(style, props) {
+  initFlex: function(props) {
+    let style = {};
     if (typeof(props.flex) === "number") {
         style.flexGrow = props.flex;
     } else if (typeof(props.flex) === "string") {
