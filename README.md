@@ -194,3 +194,15 @@ export default App;
 ### Output
 
 ![snapshot.png](https://s16.postimg.org/fk78g8pvp/snapshot.png)
+
+### Browser Support
+
+Broken up by "version" of flexbox:
+
+* (new) means the recent syntax from the specification ( e.g. display: flex; )
+* (tweener) means an odd unofficial syntax from 2011 ( e.g. display: flexbox; )
+* (old) means the old syntax from 2009 ( e.g. display: box; )
+
+| Chrome  | Safari  | Firefox  | Opera  | IE  | Android  | iOS  |
+|:-:|:-:|:-:|:-:|:-:|:-:|:-:|
+| 20-(old)<br> 21+(new)  |  3.1+ (old) <br> 6.1+ (new) | 2-21 (old) <br> 22+ (new)  | 12.1+ (new)  | 10 (tweener) <br> 11+ (new)  | 2.1+ (old) <br> 4.4+ (new)  | 3.2+ (old) <br>7.1+ (new)  |
