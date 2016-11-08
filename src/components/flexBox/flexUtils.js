@@ -23,7 +23,7 @@ module.exports = {
     return style;
   },
 
-  // Container Attribute: flex-direction
+  // Container Attribute: flex-Wrap
   initWrap: function(style, props) {
     if (props.wrap) {
         style.flexWrap = "wrap";
