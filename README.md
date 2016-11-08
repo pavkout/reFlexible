@@ -52,51 +52,138 @@ Available props:
 import React, { Component } from 'react';
 import FlexBox from 'flexBox';
 
-import './app.post.css';
-
 class App extends Component {
-	getRandomColor() {
-		return '#'+(Math.random()*0xFFFFFF<<0).toString(16);
-	}
-
-	getDiferentColors(style) {
-			let color = this.getRandomColor();
-			while (color === 'white') {
-				color = this.getRandomColor();
-			}
-			return {
-					...style,
-					backgroundColor: color
-			}
-	}
-
 	render() {
 
 		const style = {
 			padding: 4,
 			margin: 10,
+			width: '150px',
+			height: '150px',
 			textAlign: 'center',
-		  color: 'white'
+		  color: 'white',
+			backgroundColor: '#6666ff',
+			border: '1px solid black'
+		};
+
+		const styleChild = {
+			width: '25px',
+			height: '25px',
+			backgroundColor: 'white',
+			margin: '2px'
 		};
 
 		return (
-			<div reflexible center centerJustified style={{height: '800px', width: '100%'}}>
-				<div style={this.getDiferentColors(style)} self-end flex="4">1</div>
-				<div style={this.getDiferentColors(style)} order="1" flex-grow="1">2</div>
-				<div style={this.getDiferentColors(style)} order="2" flex-grow="2">3</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1" flex-basis="200px">4</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">5</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">6</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">7</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">8</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">9</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">10</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">11</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">12</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">13</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">14</div>
-				<div style={this.getDiferentColors(style)} flex-grow="1">15</div>
-		</div>
+			<div reflexible column style={{height: '800px', width: '100%', border: '2px solid black'}}>
+				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div reflexible style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible centerJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible endJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible aroundJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible justified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+				</div>
+				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div reflexible center style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible center centerJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible center endJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible center aroundJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible center justified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+				</div>
+				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div reflexible end style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end centerJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end endJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end aroundJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end justified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+				</div>
+				<div reflexible center justified style={{height: '200px', width: '100%'}}>
+					<div reflexible end style={style}>
+						<div selfStart style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end centerJustified style={style}>
+						<div style={styleChild} />
+						<div selfCenter style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end endJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div selfEnd style={styleChild} />
+					</div>
+					<div reflexible end aroundJustified style={style}>
+						<div style={styleChild} />
+						<div selfStretch style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div reflexible end justified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+				</div>
+			</div>
 		);
 	}
 }
@@ -106,4 +193,4 @@ export default App;
 ```
 ### Output
 
-![snapshot.png](https://s13.postimg.org/p4qqhbexj/snapshot.png)
+![snapshot.png](https://s16.postimg.org/fk78g8pvp/snapshot.png)
