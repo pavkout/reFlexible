@@ -23,110 +23,110 @@ class App extends Component {
 		};
 
 		return (
-			<div reflexible column style={{height: '800px', width: '100%', border: '2px solid black'}}>
-				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
-					<div reflexible style={style}>
+			<div flexible column style={{height: '800px', width: '100%', border: '2px solid black'}}>
+				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div flexible style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible centerJustified style={style}>
+					<div flexible centerJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible endJustified style={style}>
+					<div flexible endJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible aroundJustified style={style}>
+					<div flexible aroundJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible justified style={style}>
-						<div style={styleChild} />
-						<div style={styleChild} />
-						<div style={styleChild} />
-					</div>
-				</div>
-				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
-					<div reflexible center style={style}>
-						<div style={styleChild} />
-						<div style={styleChild} />
-						<div style={styleChild} />
-					</div>
-					<div reflexible center centerJustified style={style}>
-						<div style={styleChild} />
-						<div style={styleChild} />
-						<div style={styleChild} />
-					</div>
-					<div reflexible center endJustified style={style}>
-						<div style={styleChild} />
-						<div style={styleChild} />
-						<div style={styleChild} />
-					</div>
-					<div reflexible center aroundJustified style={style}>
-						<div style={styleChild} />
-						<div style={styleChild} />
-						<div style={styleChild} />
-					</div>
-					<div reflexible center justified style={style}>
+					<div flexible justified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
 				</div>
-				<div reflexible center justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
-					<div reflexible end style={style}>
+				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div flexible alignCenter style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end centerJustified style={style}>
+					<div flexible alignCenter centerJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end endJustified style={style}>
+					<div flexible alignCenter endJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end aroundJustified style={style}>
+					<div flexible alignCenter aroundJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end justified style={style}>
+					<div flexible alignCenter justified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
 				</div>
-				<div reflexible center justified style={{height: '200px', width: '100%'}}>
-					<div reflexible end style={style}>
+				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+					<div flexible alignEnd style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div flexible alignEnd centerJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div flexible alignEnd endJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div flexible alignEnd aroundJustified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+					<div flexible alignEnd justified style={style}>
+						<div style={styleChild} />
+						<div style={styleChild} />
+						<div style={styleChild} />
+					</div>
+				</div>
+				<div flexible alignCenter justified style={{height: '200px', width: '100%'}}>
+					<div flexible alignEnd style={style}>
 						<div selfStart style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end centerJustified style={style}>
+					<div flexible alignEnd centerJustified style={style}>
 						<div style={styleChild} />
-						<div selfCenter style={styleChild} />
+						<div selfalignCenter style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end endJustified style={style}>
+					<div flexible alignEnd endJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div selfEnd style={styleChild} />
 					</div>
-					<div reflexible end aroundJustified style={style}>
+					<div flexible alignEnd aroundJustified style={style}>
 						<div style={styleChild} />
 						<div selfStretch style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div reflexible end justified style={style}>
+					<div flexible alignEnd justified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />

@@ -1,52 +1,90 @@
 module.exports = {
+  // Container Attribute: display
+  initFlexible: function(style, props) {
+    if (props.flexible) {
+      style = { display: "flex" }
+    } else if (props["inline"] || props["inline-flexible"] || props["inlineFlexible"]) {
+      style = { display: "inline-flex" }
+    } else {
+      style = {}
+    }
+
+    return style;
+  },
+
   // Container Attribute: flex-direction
   initFlexDirection: function(style, props) {
-    style = props.reflexible ? { display: "flex" } : {}
-
     if (props.column) {
         style.flexDirection = style.WebkitFlexDirection = props.reverse ? "column-reverse" : "column";
     } else {
         style.flexDirection = style.WebkitFlexDirection = props.reverse ? "row-reverse" : "row";
     }
 
-    if (props.wrap) {
-        style.flexWrap = "wrap";
-    }
-
     return style;
   },
 
-  // Container Attribute: align-items
-  initAlignItems: function(style, props) {
-    if (props.center) {
-        style.alignItems = "center";
-    } else if (props.start) {
-        style.alignItems = "flex-start";
-    } else if (props.end) {
-        style.alignItems = "flex-end";
-    } else if (props.stretch) {
-        style.alignItems = "stretch";
+  // Container Attribute: flex-direction
+  initWrap: function(style, props) {
+    if (props.wrap) {
+        style.flexWrap = "wrap";
+    } else if (props["wrap-reverse"] || props["wrapReverse"]){
+        style.flexWrap = "wrap-reverse";
+    } else {
+        style.flexWrap = "nowrap";
     }
+
     return style;
   },
 
   // Container Attribute: justify-content
   initJustifyContent: function(style, props) {
     if (props["startJustified"] || props["start-justified"]) {
-        style.justifyContent = "flex-start";
+      style.justifyContent = "flex-start";
     } else if (props["centerJustified"] || props["center-justified"]) {
-        style.justifyContent = "center";
+      style.justifyContent = "center";
     } else if (props["endJustified"] || props["end-justified"]) {
-        style.justifyContent = "flex-end";
-    } else if (props["justified"]) {
-        style.justifyContent = "space-between";
+      style.justifyContent = "flex-end";
+    } else if (props["justified"] || props["spaceJustified"] || props["space-justified"]) {
+      style.justifyContent = "space-between";
     } else if (props["aroundJustified"] || props["around-justified"]) {
-        style.justifyContent = "space-around";
+      style.justifyContent = "space-around";
+    }
+    return style;
+  },
+
+  // Container Attribute: align-items
+  initAlignItems: function(style, props) {
+    if (props["alignCenter"] || props["align-center"]) {
+        style.alignItems = "center";
+    } else if (props["alignStart"] || props["align-start"]) {
+        style.alignItems = "flex-start";
+    } else if (props["alignEnd"] || props["align-end"]) {
+        style.alignItems = "flex-end";
+    } else if (props["alignStretch"] || props["align-stretch"]) {
+        style.alignItems = "stretch";
+    } else if (props["alignBaseline"] || props["align-baseline"]) {
+        style.alignItems = "baseline";
     }
     return style;
   },
 
   // Container Attribute: align-content
+  initAlignContent: function(style, props) {
+    if (props["contentCenter"] || props["content-center"]) {
+        style.alignContent = "center";
+    } else if (props["contentStart"] || props["content-start"]) {
+        style.alignContent = "flex-start";
+    } else if (props["contentEnd"] || props["content-end"]) {
+        style.alignContent = "flex-end";
+    } else if (props["contentStretch"] || props["content-stretch"]) {
+        style.alignContent = "stretch";
+    } else if (props["contentSpace"] || props["content-space"]) {
+        style.alignContent = "space-between";
+    } else if (props["contentAround"] || props["content-around"]) {
+        style.alignContent = "space-around";
+    }
+    return style;
+  },
 
   // Item Attribute: align-self
   initAlignSelf: function(style, props) {
@@ -58,7 +96,12 @@ module.exports = {
         style.alignSelf = "flex-end";
     } else if (props["selfStretch"] || props["self-stretch"]) {
         style.alignSelf = "stretch";
+    } else if (props["selfBaseline"] || props["self-baseline"]) {
+        style.alignSelf = "baseline";
+    } else if (props["selfAuto"] || props["self-auto"]) {
+        style.alignItems = "auto";
     }
+
     return style;
   },
 
