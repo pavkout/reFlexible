@@ -46,7 +46,7 @@ module.exports = {
       style.justifyContent = "center";
     } else if (props["endJustified"] || props["end-justified"]) {
       style.justifyContent = "flex-end";
-    } else if (props["justified"] || props["spaceJustified"] || props["space-justified"]) {
+    } else if (props["betweenJustified"] || props["between-justified"]) {
       style.justifyContent = "space-between";
     } else if (props["aroundJustified"] || props["around-justified"]) {
       style.justifyContent = "space-around";
