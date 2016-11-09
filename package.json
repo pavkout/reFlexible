@@ -32,6 +32,7 @@
     "lodash": "^4.16.4",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
+    "react-style-normalizer": "^1.2.8",
     "to-array": "^0.1.4"
   },
   "devDependencies": {

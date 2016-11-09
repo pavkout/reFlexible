@@ -1,5 +1,7 @@
 import { mapKeys, cloneDeep } from 'lodash';
 import Constants from 'constants';
+import normalize from 'react-style-normalizer';
+
 import {
   initFlexible,
   initFlexDirection,
@@ -22,7 +24,7 @@ module.exports = {
           const cloneProps = cloneDeep(props);
 
           return {
-              style: {
+              style: normalize({
                 ...props.style || {},
                 ...initFlexible(cloneProps),
                 ...initFlexDirection(cloneProps),
@@ -36,7 +38,7 @@ module.exports = {
                 ...initFlexShrink(cloneProps),
                 ...initFlexBasis(cloneProps),
                 ...initFlex(cloneProps)
-              }
+              })
           };
       }
       return {};
