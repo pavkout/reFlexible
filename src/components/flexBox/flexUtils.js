@@ -4,7 +4,7 @@ module.exports = {
     let style = {};
     if (props.flexible) {
       style = { display: "flex" }
-    } else if (props["inline"] || props["inline-flexible"] || props["inlineFlexible"]) {
+    } else if (props["inline-flexible"] || props["inlineFlexible"]) {
       style = { display: "inline-flex" }
     }
 

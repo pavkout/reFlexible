@@ -1,7 +1,6 @@
 const Constants = {
   // Display
   flexible: 'flexible',
-  inline: 'inline',
   'inline-flexible': 'inline-flexible',
   inlineFlexible: 'inlineFlexible',
 
