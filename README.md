@@ -95,7 +95,7 @@ Available props:
 |   	|   	|   	|   	|
 |   	|   	|   	|   	|
 |   	|   	|   	|   	|
-|   	|   	|   	|   	|
+|   flex	|  number <br> or <br>string 	|   	|   flex: 0 1 auto;	|
 ### Some examples
 ```js
 import React, { Component } from 'react';
