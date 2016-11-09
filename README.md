@@ -18,34 +18,44 @@ Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug,
 
 Available props:
 
-| Prop         	| Type            	| Description                                                                                                                                   	| Values                                                                                                                                                              	|
-|--------------	|-----------------	|-----------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| align        	| String          	| Sets the align-items alignement on the flex axis                                                                                              	| flex-start, flex-end, center, baseline, stretch (default)                                                                                                           	|
-| className    	| String          	| A Classname being passed to the flex container. If responsive breakpoints are set, the current breakpoint value is appended to the className. 	| Any                                                                                                                                                                 	|
-| itemDefaults 	| Object          	| Allows to pass default props to all the child Items.                                                                                          	| An object of Item props.                                                                                                                                            	|
-| justify      	| String          	| Sets the justify-content flex property                                                                                                        	| flex-start, flex-end, center, space-between, space-around                                                                                                           	|
-| noWrap       	| Bool            	| Sets the flex-wrap property to nowrap                                                                                                         	| By default, in order to support responsive layouts all the containers are set to wrap, if you wish to override this behavior set this prop to true.                 	|
-| reverse      	| Bool            	| Reverses the container's flex-direction                                                                                                       	|                                                                                                                                                                     	|
-| size         	| Number or String 	| Sets the flex property                                                                                                                        	| If a number is provided (1), the flex shorthand property is set: flex: 1, if a width is provided ('20%'), the flex shortahnd property is set as follows flex: 1 10% 	|
-| small        	| Number or String 	| Sets and override the size property when the small breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the small breakpoint is active.                                                                         	|
-| medium        	| Number or String 	| Sets and override the size property when the medium breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the medium breakpoint is active.                                                                         	|
-| large        	| Number or String 	| Sets and override the size property when the large breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the large breakpoint is active.                                                                         	|
-| wide        	| Number or String 	| Sets and override the size property when the wide breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the wide breakpoint is active.                                                                         	|
 
-###Items
+| Prop  | Type  | Description  | Value  |
+|:-|:-:|:-:|:-:|
+| flexible  | bool  | Set the display flex  | display: flex;  |
+| inline-flexible <br> inlineFlexible  | bool  | Set the display inline-flex  | display: inline-flex; |
+|column |bool| Set the direction from items, <br> default is row direction | flex-direction: column; |
+|reverse |bool| Reverse the direction from items| flex-direction: column-reverse; <br> or <br> flex-direction: row-reverse; |
+|wrap |bool| Change the wrapping from items <br> by default is noWrap | flex-Wrap: wrap; |
+|wrap-reverse <br> wrapReverse |bool| Revert the wrapping from items <br> by default is noWrap | flex-Wrap: wrap-reverse; |
+|startJustified <br> start-justified|bool| |justify-content: flex-start;|
+|centerJustified <br> center-justified|bool| |justify-content: center;|
+|endJustified <br> end-justified|bool| |justify-content: flex-end;|
+|betweenJustified <br> between-justified|bool| |justify-content: space-between;|
+|aroundJustified <br> around-justified|bool| |justify-content: space-around;|
+|alignCenter <br> align-center|bool| |align-items: center;|
+|alignStart <br> align-start|bool| |align-items: flex-start;|
+|alignEnd <br> align-end|bool| |align-items: flex-end;|
+|alignStretch <br> align-stretch|bool| |align-items: stretch;|
+|alignBaseline <br> align-baseline|bool| |align-items: baseline;|
+|contentCenter <br> content-center|bool| |align-content: center;|
+|contentStart <br> content-start|bool| |align-content: flex-start;|
+|contentEnd <br> content-start|bool| |align-content: flex-end;|
+|contentStretch <br> content-stretch|bool| |align-content: stretch;|
+|contentSpace <br> content-space|bool| |align-content: space-between;|
+|contentAround <br> content-around|bool| |align-content: space-around;|
+|selfStart <br> self-start|bool| |align-self: flex-start;|
+|selfCenter <br> self-center|bool| |align-self: center;|
+|selfEnd <br> self-end|bool| |align-self: flex-end;|
+|selfStretch <br> self-stretch|bool| |align-self: stretch;|
+|selfBaseline <br> self-baseline|bool| |align-self: baseline;|
+|selfAuto <br> self-auto|bool| |align-self: auto;|
+|order| number <br> or <br>string | |order: 1;|
+|flexGrow <br> flex-grow| number <br> or <br>string| |flex-grow: 1;|
+|flexShrink <br> flex-shrink| number <br> or <br>string| |flex-shrink: 1;|
+|flexBasis <br> flex-basis| number <br> or <br>string| |flex-basis: 20px;|
+|flex| number <br> or <br>string| |flex: 0 1 auto;|
 
-Available props:
 
-| Prop         	| Type            	| Description                                                                                                                                   	| Values                                                                                                                                                              	|
-|--------------	|-----------------	|-----------------------------------------------------------------------------------------------------------------------------------------------	|---------------------------------------------------------------------------------------------------------------------------------------------------------------------	|
-| align        	| String          	| Sets the align-self alignement on the flex axis                                                                                              	| flex-start, flex-end, center, baseline, stretch (default)                                                                                                           	|
-| className    	| String          	| A Classname being passed to the flex container. If responsive breakpoints are set, the current breakpoint value is appended to the className. 	| Any                                                                                                                                                                 	|
-| order        	| Number          	| Sets the order flex property                                                                                                                  	| 1, 2, 3, ...                                                                                                                                                        	|
-| size         	| Number or String 	| Sets the flex property                                                                                                                        	| If a number is provided (1), the flex shorthand property is set: flex: 1, if a width is provided ('20%'), the flex shortahnd property is set as follows flex: 1 10% 	|
-| small        	| Number or String 	| Sets and override the size property when the small breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the small breakpoint is active.                                                                         	|
-| medium        	| Number or String 	| Sets and override the size property when the medium breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the medium breakpoint is active.                                                                         	|
-| large        	| Number or String 	| Sets and override the size property when the large breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the large breakpoint is active.                                                                         	|
-| wide        	| Number or String 	| Sets and override the size property when the wide breakpoint is active.                                                                      	| When set to 'hide', it prevents rendering the children when the wide breakpoint is active.                                                                         	|
 
 ### Some examples
 ```js
