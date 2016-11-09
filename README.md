@@ -18,6 +18,11 @@ Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug,
 
 Available props:
 
+|   |   |   |   |
+|:-:|:-:|:-:|:-:|
+|   |   |   |   |
+|   |   |   |   |
+
 | Prop | Type  | Description  | Value  |
 |:-|:-:|:-:|:-:|
 | flexible  | bool  | Set the display flex  | display: flex;  |
@@ -54,7 +59,43 @@ Available props:
 | flexBasis <br> flex-basis | number <br> or <br>string | coming soon | flex-basis: 20px; |
 | flex | number <br> or <br>string | coming soon | flex: 0 1 auto; |
 
-
+|   	|   	|   	|   	|
+|:-:	|:-:	|:-:	|:-:	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
+|   	|   	|   	|   	|
 ### Some examples
 ```js
 import React, { Component } from 'react';
