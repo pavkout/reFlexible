@@ -53,6 +53,7 @@ Available props:
 |  flexShrink <br> flex-shrink 	|  number <br> or <br>string 	|  coming soon 	|  flex-shrink: 1; 	|
 |  flexBasis <br> flex-basis 	|  number <br> or <br>string 	|  coming soon 	|   flex-basis: 20px;	|
 |   flex	|  number <br> or <br>string 	|   coming soon	|   flex: 0 1 auto;	|
+
 ### Some examples
 ```js
 import React, { Component } from 'react';
