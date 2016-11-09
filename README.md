@@ -19,7 +19,7 @@ Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug,
 Available props:
 
 |  Prop 	|  Type 	|  Description 	|  Value 	|
-|:-:	|:-:	|:-:	|:-:	|
+|:-	|:-:	|:-:	|:-:	|
 |  flexible 	|  bool 	|  Set the display flex 	|  display: flex; 	|
 |  inline-flexible <br> inlineFlexible 	|  bool 	|  Set the display inline-flex 	|  display: inline-flex; 	|
 |  column 	|  bool 	|  Set the direction from items, <br> default is row direction 	|  flex-direction: column; 	|
