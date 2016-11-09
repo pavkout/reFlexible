@@ -18,6 +18,11 @@ Please [Open issue](https://github.com/pavkout/reFlexible/issues), describe bug,
 
 Available props:
 
+|   |   |   |   |
+|:-:|:-:|:-:|:-:|
+|   |   |   |   |
+|   |   |   |   |
+
 
 | Prop  | Type  | Description  | Value  |
 |:-|:-:|:-:|:-:|
@@ -54,7 +59,6 @@ Available props:
 |flexShrink <br> flex-shrink| number <br> or <br>string| |flex-shrink: 1;|
 |flexBasis <br> flex-basis| number <br> or <br>string| |flex-basis: 20px;|
 |flex| number <br> or <br>string| |flex: 0 1 auto;|
-
 
 
 ### Some examples
