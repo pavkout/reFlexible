@@ -24,7 +24,7 @@ class App extends Component {
 
 		return (
 			<div flexible column style={{height: '800px', width: '100%', border: '2px solid black'}}>
-				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+				<div flexible alignCenter betweenJustified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
 					<div flexible style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
@@ -45,13 +45,13 @@ class App extends Component {
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div flexible justified style={style}>
+					<div flexible betweenJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
 				</div>
-				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+				<div flexible alignCenter betweenJustified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
 					<div flexible alignCenter style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
@@ -72,13 +72,13 @@ class App extends Component {
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div flexible alignCenter justified style={style}>
+					<div flexible alignCenter betweenJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
 				</div>
-				<div flexible alignCenter justified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
+				<div flexible alignCenter betweenJustified style={{height: '200px', width: '100%', 'borderBottom': '2px solid black'}}>
 					<div flexible alignEnd style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
@@ -99,13 +99,13 @@ class App extends Component {
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div flexible alignEnd justified style={style}>
+					<div flexible alignEnd betweenJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
 					</div>
 				</div>
-				<div flexible alignCenter justified style={{height: '200px', width: '100%'}}>
+				<div flexible alignCenter betweenJustified style={{height: '200px', width: '100%'}}>
 					<div flexible alignEnd style={style}>
 						<div selfStart style={styleChild} />
 						<div style={styleChild} />
@@ -126,7 +126,7 @@ class App extends Component {
 						<div selfStretch style={styleChild} />
 						<div style={styleChild} />
 					</div>
-					<div flexible alignEnd justified style={style}>
+					<div flexible alignEnd betweenJustified style={style}>
 						<div style={styleChild} />
 						<div style={styleChild} />
 						<div style={styleChild} />
