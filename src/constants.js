@@ -1,7 +1,6 @@
 const Constants = {
   // Display
   flexible: 'flexible',
-  inline: 'inline',
   'inline-flexible': 'inline-flexible',
   inlineFlexible: 'inlineFlexible',
 
@@ -21,8 +20,7 @@ const Constants = {
   'center-justified': 'center-justified',
   endJustified: 'endJustified',
   'end-justified': 'end-justified',
-  justified: 'justified',
-  spaceJustified: 'spaceJustified',
+  betweenJustified: 'betweenJustified',
   'space-justified': 'space-justified',
   aroundJustified: 'aroundJustified',
   'around-justified': 'around-justified',
