@@ -1,19 +1,6 @@
 import { mapKeys, cloneDeep } from 'lodash';
 import Constants from 'constants';
-import {
-  initFlexible,
-  initFlexDirection,
-  initWrap,
-  initJustifyContent,
-  initAlignItems,
-  initAlignContent,
-  initAlignSelf,
-  initOrder,
-  initFlexGrow,
-  initFlexShrink,
-  initFlexBasis,
-  initFlex
-} from 'flexUtils';
+import { initPropsToStyle } from 'flexUtils';
 
 module.exports = {
   initProps: function(props) {
@@ -24,18 +11,7 @@ module.exports = {
           return {
               style: {
                 ...props.style || {},
-                ...initFlexible(cloneProps),
-                ...initFlexDirection(cloneProps),
-                ...initWrap(cloneProps),
-                ...initJustifyContent(cloneProps),
-                ...initAlignItems(cloneProps),
-                ...initAlignContent(cloneProps),
-                ...initAlignSelf(cloneProps),
-                ...initOrder(cloneProps),
-                ...initFlexGrow(cloneProps),
-                ...initFlexShrink(cloneProps),
-                ...initFlexBasis(cloneProps),
-                ...initFlex(cloneProps)
+                ...initPropsToStyle(cloneProps)
               }
           };
       }
